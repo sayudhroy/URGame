@@ -1,0 +1,9 @@
+node_modules/*
+*.db
+npm-debug.log
+resources/templates/menu/menu.html
+resources/templates/menu/menu.js
+*.css
+routes.js
+server.js
+SQL Files/create_triggers.sql

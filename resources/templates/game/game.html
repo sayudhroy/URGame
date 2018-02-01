@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>UR Game</title>
+        <link rel="stylesheet" href="game_style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="game.js" type="text/javascript"></script>
+    </head>
+    <body onload="startGame()">
+      <div class="topnav" id="myTopnav">
+        <div class="global_header">
+          <div class="user" id="userName"></div>
+          <div class="score" id="curScore"></div>
+          <div class="clear"></div>
+        </div>
+      </div>
+
+      <div class="global_header">
+          <div class="user" id="userName"></div>
+          <div class="score" id="curScore"></div>
+          <div class="clear"></div>
+      </div>
+
+       <div id="gamecanvas"></div>
+
+       <div class="center">
+        <div class ="sidebyside">
+          <button type="button" onclick="logout()" >Logout</button>
+        </div>
+        <div class ="sidebyside">
+          <button type="button" onclick="navigateToMenu()" >Main Menu</button>
+        </div>
+      </div>
+
+    </body>
+</html>

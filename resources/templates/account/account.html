@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UR Game</title>
+        <link rel="stylesheet" href="menu_style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+        <script src="account.js" type="text/javascript"></script>
+    </head>
+    <body onload="loadAccountInfo()">
+      <div class="topnav" id="myTopnav">
+        <div class="global_header">
+          <div class="user" id="userName"></div>
+          <div class="clear"></div>
+
+        </div>
+      </div>
+      <h1 class="menu_header">Account Information</h1>
+      <div class="center">
+        <div class="account_info" id="accountName"></div>
+        <div class="account_info"><b>Color:</b> <input type="color" id="colorPicker" value="#ff0000"></div>
+      </div>
+      <div class="button_contianer">
+        <button class="menu_button" onclick="updateColor()">Apply</button>
+        <button class="menu_button" onclick="navigateToMenu()">Main Menu</button>
+        <button class="menu_button" id="delete" onclick="deleteUser()">Delete User</button>
+        <button class="menu_button" id="delete" onclick="ResetScore()">Reset High Score</button>
+      </div>
+      <p id="demo"></p>
+    </body>
+</html>
